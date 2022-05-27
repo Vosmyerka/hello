@@ -10,7 +10,6 @@ defmodule HelloWeb.ThermostatLive do
     """
   end
 
-  @spec mount(any, map, map) :: {:ok, map}
   def mount(_params, _, socket) do
     temperature = 0
     {:ok, assign(socket, :temperature, temperature)}
